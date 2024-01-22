@@ -22,3 +22,13 @@ console.log(list.innerHTML)
 let newStr = "<div>Get a dog</div>"
 // list.innerHTML += newStr;
 list.insertAdjacentHTML('afterbegin', newStr);
+
+let company = "<p>Start a company</p>"
+let appartment= "<p>Buy an appartment</p>"
+let alone= "<p>Go on a trip alone</p>"
+
+let myArray = [company, appartment, alone]
+
+for (let i = 0; i < myArray.length; i++) {
+    list.innerHTML += myArray[i]    
+}
